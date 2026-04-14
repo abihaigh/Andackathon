@@ -21,7 +21,7 @@ Deploy button:
 # [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)]
 
 
-# [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/myrepo/mydirectory/master.zip)
+# [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/abihaigh/Andackathon/blob/main/ADW_Stack/ADW_26_deploy.zip)
 
 > **Tip:** Push this folder to a GitHub repo and use the release zip URL directly.
 
