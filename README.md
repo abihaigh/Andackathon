@@ -1,4 +1,4 @@
-# Oracle Autonomous Database 26ai — Always Free
+Andaca-thon - Urban and Otter
 
 Deploy an **Oracle Database 26ai** Autonomous Database on the **Always Free tier** using OCI Resource Manager.
 
