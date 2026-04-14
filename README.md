@@ -1,4 +1,5 @@
-# Andaca-thon - Urban and Otter
+# ANDAC-A-THON - 2026
+
 This is the repo for the ANOOUC Summit 2026 Hack-a-thon and Data-a-thon. From booting up the database to loading the data. 
 
 Deploy an **Oracle Database 26ai** Autonomous Database on the **Always Free tier** using OCI Resource Manager.
