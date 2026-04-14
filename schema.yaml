@@ -1,0 +1,148 @@
+# =============================================================================
+# schema.yaml — OCI Resource Manager variable UI definition
+# Oracle Autonomous Database 26ai Always Free
+# =============================================================================
+title: "Oracle Autonomous Database 26ai — Always Free"
+description: "Deploy an Oracle Database 26ai Autonomous Database on the Always Free tier. Includes AI Vector Search, Property Graph, JSON Duality Views, and native ONNX ML inference — all at zero cost."
+schemaVersion: 1.1.0
+version: "20240101"
+locale: "en"
+
+variableGroups:
+  - title: "OCI Region & Compartment"
+    visible: true
+    variables:
+      - region
+      - compartment_ocid
+
+  - title: "Database Identity"
+    visible: true
+    variables:
+      - adb_display_name
+      - adb_db_name
+      - db_version
+      - db_workload
+
+  - title: "Admin Credentials"
+    visible: true
+    variables:
+      - adb_admin_password
+
+  - title: "Network Options"
+    visible: true
+    variables:
+      - require_mtls
+
+  - title: "Tagging"
+    visible: true
+    variables:
+      - environment_tag
+
+  - title: "Authentication (local runs only — leave blank in Resource Manager)"
+    visible: false
+    variables:
+      - tenancy_ocid
+      - user_ocid
+      - fingerprint
+      - private_key_path
+
+# ---------------------------------------------------------------------------
+# Variable metadata
+# ---------------------------------------------------------------------------
+variables:
+
+  region:
+    type: oci:identity:region:name
+    title: "OCI Region"
+    description: "Region where the Autonomous Database will be deployed."
+    required: true
+
+  compartment_ocid:
+    type: oci:identity:compartment:id
+    title: "Compartment"
+    description: "Compartment in which to create the Autonomous Database."
+    required: true
+
+  adb_display_name:
+    type: string
+    title: "Display Name"
+    description: "Human-readable name shown in the OCI Console."
+    default: "ADB26aiFree"
+    required: true
+
+  adb_db_name:
+    type: string
+    title: "Database Name"
+    description: "Alphanumeric short name (≤10 chars). A 4-char suffix is appended automatically."
+    default: "ADB26AI"
+    required: true
+
+  db_version:
+    type: enum
+    title: "Oracle Database Version"
+    description: "Choose '26ai' for Oracle Database 26ai (AI Vector Search, Property Graph, JSON Duality, ONNX inference). Fall back to '23ai' if 26ai is unavailable in your region."
+    default: "26ai"
+    required: true
+    enum:
+      - "26ai"
+      - "23ai"
+      - "21c"
+      - "19c"
+
+  db_workload:
+    type: enum
+    title: "Workload Type"
+    description: "Select the workload profile. OLTP (ATP) is recommended for general-purpose and AI workloads."
+    default: "OLTP"
+    required: true
+    enum:
+      - "OLTP"
+      - "DW"
+      - "AJD"
+      - "APEX"
+
+  adb_admin_password:
+    type: password
+    title: "ADMIN Password"
+    description: "Password for the ADMIN schema. Must be 12–30 chars and include uppercase, lowercase, a digit, and one of: # _ -"
+    required: true
+    sensitive: true
+
+  require_mtls:
+    type: boolean
+    title: "Require Mutual TLS (mTLS)"
+    description: "When enabled, clients must present a wallet (client certificate). Disable for wallet-free TLS connections — convenient for demos."
+    default: false
+    required: true
+
+  environment_tag:
+    type: string
+    title: "Environment Tag"
+    description: "Value for the 'Environment' freeform tag (e.g. Demo, Dev, Test)."
+    default: "Demo"
+    required: false
+
+outputs:
+  adb_id:
+    title: "Autonomous Database OCID"
+    displayText: "ADB OCID"
+    type: copyableString
+    visible: true
+
+  adb_service_console_url:
+    title: "Service Console URL"
+    displayText: "Open Service Console"
+    type: link
+    visible: true
+
+  adb_db_version:
+    title: "Database Version"
+    displayText: "Deployed Oracle DB Version"
+    type: string
+    visible: true
+
+  wallet_download_hint:
+    title: "Connection Hint"
+    displayText: "How to Connect"
+    type: string
+    visible: true
