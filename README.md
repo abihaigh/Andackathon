@@ -14,11 +14,7 @@ This stack provisions a fully managed ADB with zero cost using Oracle's Always F
 
 ## 🚀 One-Click Deploy
 
-Deploy button:
-
-
-## Magic Button 
-# [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)]
+Deploy Oracle 26ai Database button:
 
 
 # [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/abihaigh/Andackathon/blob/main/ADW_Stack/ADW_26_deploy.zip)
