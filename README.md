@@ -17,7 +17,7 @@ This stack provisions a fully managed ADB with zero cost using Oracle's Always F
 Upload this stack zip to OCI Object Storage (pre-authenticated request) or GitHub, then link the Deploy button:
 
 ```markdown
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=<YOUR-ZIP-URL>)
+[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)]([https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=<YOUR-ZIP-URL>](https://github.com/abihaigh/Andackathon/blob/main/main.tf))
 ```
 
 Replace `<YOUR-ZIP-URL>` with the URL of your hosted zip file.
