@@ -18,8 +18,10 @@ Deploy button:
 
 
 ## Magic Button 
+# [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)]
 
- [![Deploy to Oracle Cloud][magic_button]][magic_mushop_stack]
+
+# [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/myrepo/mydirectory/master.zip)
 
 > **Tip:** Push this folder to a GitHub repo and use the release zip URL directly.
 
