@@ -18,8 +18,8 @@ Deploy button:
 
 
 ## Magic Button 
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)]
-(https://github.com/abihaigh/Andackathon/blob/main/ADW_26_deploy.zip)
+
+ [![Deploy to Oracle Cloud][magic_button]][magic_mushop_stack]
 
 > **Tip:** Push this folder to a GitHub repo and use the release zip URL directly.
 
