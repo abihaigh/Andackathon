@@ -14,7 +14,7 @@ This stack provisions a fully managed ADB with zero cost using Oracle's Always F
 
 ---
 
-## 🚀 One-Click Deploy
+## 🚀 One-Click Deploy - 26ai Database
 
 Deploy Oracle 26ai Database button:
 
@@ -44,6 +44,15 @@ All of the following are available the moment your ADB is provisioned:
 - Sufficient IAM permissions to create Autonomous Databases in the target compartment
 
 ---
+
+## 🚀 One-Click Deploy - Oracle Data Science Platform
+
+Deploy Oracle OCI Data Science Platform:
+
+
+# [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/abihaigh/Andackathon/raw/main/adb-26ai-free-stack.zip)
+
+> **Tip:** Push this folder to a GitHub repo and use the release zip URL directly.
 
 ## Local Deployment (without Resource Manager)
 
