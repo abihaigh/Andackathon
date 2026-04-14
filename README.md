@@ -16,9 +16,11 @@ This stack provisions a fully managed ADB with zero cost using Oracle's Always F
 
 Deploy button:
 
-```markdown
+
+## Magic Button 
 [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://github.com/abihaigh/Andackathon/blob/main/main.tf)
-```
+
+
 > **Tip:** Push this folder to a GitHub repo and use the release zip URL directly.
 
 ---
